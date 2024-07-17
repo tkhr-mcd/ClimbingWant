@@ -202,3 +202,60 @@ div.footer-area div.footer-company-logo span{
   padding-left: 15px;
   font-size: 1.5vw;
 }
+
+/* スマホ用のスタイル */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  header .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-company-logo img {
+    width: 100px;
+  }
+  
+  .header-company-logo span {
+    font-size: var(--font-size-lg);
+  }
+
+  .footer-area {
+    padding: 50px 5%;
+  }
+
+  .footer-area .contact img {
+    width: 10vw;
+  }
+
+  .footer-area .contact h1 {
+    font-size: 5vw;
+  }
+
+  .footer-area .contact .right-arrow {
+    font-size: 10vw;
+  }
+
+  .footer-area ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-area ul li {
+    padding: 10px 0;
+    font-size: var(--font-size-lg);
+  }
+
+  .footer-company-logo img {
+    width: 10vw;
+  }
+
+  .footer-company-logo span {
+    font-size: var(--font-size-lg);
+  }
+}
+

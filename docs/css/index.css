@@ -153,3 +153,43 @@ div.company-summary-content hr {
   border: none;
 
 }
+
+
+/* スマホ用のスタイル */
+@media (max-width: 480px) {
+  .top-image-area .top-message {
+    font-size: 4vw;
+    padding: 20px;
+  }
+
+  .service-summary-area .container-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-summary-area .container-1,
+  .service-summary-area .container-2 {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .member .container-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member .container-1,
+  .member .container-2 {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .company-summary-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .company-summary-content div {
+    padding: 10px 0;
+  }
+}
