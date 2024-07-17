@@ -216,3 +216,38 @@ div.frequently-asked-questions hr {
 div.frequently-asked-questions div.answer {
   margin-bottom: 50px;
 }
+
+
+/* スマホ用のスタイル */
+@media (max-width: 480px) {
+  .speak-mind-can .container-area,
+  .speak-mind-feature .container-area,
+  .speak-mind-user-voice .container-area,
+  .introduction-flow .container-area-1,
+  .introduction-flow .container-area-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speak-mind-can .container,
+  .speak-mind-feature .container,
+  .speak-mind-user-voice .container,
+  .introduction-flow .container-1,
+  .introduction-flow .container-3,
+  .introduction-flow .container-5,
+  .introduction-flow .container-7,
+  .introduction-flow .container-2,
+  .introduction-flow .container-4,
+  .introduction-flow .container-6 {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .frequently-asked-questions .container-area {
+    padding: 50px 20px;
+  }
+
+  .frequently-asked-questions .question h1 {
+    font-size: var(--font-size-lg);
+  }
+}
