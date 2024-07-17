@@ -1,0 +1,155 @@
+/* top-image-area css */
+div.top-image-area {
+  background-image: url("../image/airplane_new.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+div.top-image-area div.top-message {
+  padding: 10% 10%;
+  font-size: 2vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* service-summary-area css */
+div.service-summary-area {
+  background-color: rgba(255, 188, 155, 0.2);
+  padding: 100px 50px;
+}
+
+div.service-summary-area div.container-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.service-summary-area div.container-1,
+div.service-summary-area div.container-2 {
+  flex-basis: 45%;
+}
+
+div.service-summary-area div.container-1 h3 {
+  color: #febc9b;
+  margin: 0px;
+  font-size: 1.4vw;
+}
+
+div.service-summary-area div.container-1 h1 {
+  margin: 10px 0px;
+  font-size: 3vw;
+  color: #f37947;
+}
+
+div.service-summary-area div.service-name {
+  font-size: 1.5vw;
+  color: #f37947;
+}
+
+div.service-summary-area div.short-description {
+  margin: 15px 0px;
+  font-size: 1.3vw;
+}
+
+div.service-summary-area div.long-description {
+  margin-bottom: 50px;
+  font-size: 1vw;
+  line-height: 2em;
+}
+
+div.service-summary-area a.view-more-button {
+  display: inline-block;
+  background-color: #f89a6f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 20px 20px 70px;
+  border-radius: 30px;
+}
+
+div.service-summary-area div.container-2 img {
+  width: 100%;
+}
+
+/* member area */
+div.member {
+  padding: 50px;
+}
+
+div.member h3 {
+  color: #cccccc;
+  margin: 0px;
+  font-size: 1.4vw;
+}
+div.member h1 {
+  margin: 10px 0px;
+  color: #999999;
+  font-size: 3vw;
+}
+
+div.member div.container-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.member div.container-1 {
+  flex-basis: 30%;
+}
+
+div.member div.container-1 img {
+  width: 100%;
+}
+
+div.member div.container-2 {
+  flex-basis: 60%;
+}
+
+div.member div.container-2 h2.post, 
+div.member div.container-2 h2.name-alphabet {
+  color: #999999;
+  margin: 0px;
+}
+
+div.member div.container-2 h1.name {
+  color: #000000;
+  margin: 0px;
+}
+
+div.member div.container-2 div.career {
+  margin-top: 20px;
+  font-size: 1.25vw;
+
+}
+
+
+/* company-summary-title css */
+div.company-summary-title {
+  padding: 20px 50px;
+}
+
+div.company-summary-title h3 {
+  color: #cccccc;
+  margin: 0px;
+  font-size: 1.4vw;
+}
+div.company-summary-title h1 {
+  margin: 10px 0px;
+  color: #999999;
+  font-size: 3vw;
+}
+
+/* company-summary-content css */
+div.company-summary-content {
+  margin: 0px 0px 100px 100px;
+  width: 1000px;
+}
+
+div.company-summary-content div {
+  padding: 20px 0px;
+}
+
+div.company-summary-content hr {
+  background-color: #e5e7eb;
+  height: 2px;
+  border: none;
+
+}
