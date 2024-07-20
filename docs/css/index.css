@@ -16,7 +16,7 @@ div.top-image-area div.top-message {
 /* service-summary-area css */
 div.service-summary-area {
   background-color: rgba(255, 188, 155, 0.2);
-  padding: 100px 50px;
+  padding: 50px 20px; /* 縦の余白を短く */
 }
 
 div.service-summary-area div.container-area {
@@ -52,7 +52,7 @@ div.service-summary-area div.short-description {
 }
 
 div.service-summary-area div.long-description {
-  margin-bottom: 50px;
+  margin-bottom: 20px; /* 縦の余白を短く */
   font-size: 1vw;
   line-height: 2em;
 }
@@ -62,8 +62,9 @@ div.service-summary-area a.view-more-button {
   background-color: #f89a6f;
   color: #ffffff;
   text-decoration: none;
-  padding: 20px 20px 20px 70px;
+  padding: 15px 15px 15px 40px; /* ボタンのパディングを小さく */
   border-radius: 30px;
+  font-size: 1.2vw; /* ボタンのフォントサイズを小さく */
 }
 
 div.service-summary-area div.container-2 img {
@@ -107,19 +108,19 @@ div.member div.container-2 h2.post,
 div.member div.container-2 h2.name-alphabet {
   color: #999999;
   margin: 0px;
+  font-size: 1.2vw; /* フォントサイズを小さく */
 }
 
 div.member div.container-2 h1.name {
   color: #000000;
   margin: 0px;
+  font-size: 2vw; /* フォントサイズを大きく */
 }
 
 div.member div.container-2 div.career {
   margin-top: 20px;
   font-size: 1.25vw;
-
 }
-
 
 /* company-summary-title css */
 div.company-summary-title {
@@ -151,11 +152,90 @@ div.company-summary-content hr {
   background-color: #e5e7eb;
   height: 2px;
   border: none;
-
 }
 
+/* footer css */
+footer {
+  background-image: url("../image/footer_orange_gradation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.footer-area {
+  padding: 50px 5% 25px; /* 余白を短く */
+  color: #ffffff;
+}
+
+div.footer-area hr {
+  background-color: #ffffff;
+  height: 3px;
+  border: none;
+}
+
+div.footer-area .contact {
+  display: flex;
+  padding: 25px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.footer-area .contact img {
+  width: 5vw;
+}
+
+div.footer-area a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.footer-area .contact h1 {
+  font-size: 3vw;
+}
+
+div.footer-area .contact .right-arrow {
+  font-size: 5vw;
+}
+
+div.footer-area ul {
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+div.footer-area ul li {
+  padding-right: 100px;
+  font-size: 1.75vw;
+}
+
+div.footer-area div.footer-company-logo {
+  display: flex;
+  margin-top: 25px; /* 余白を短く */
+  font-size: 1.5vw;
+  align-items: center;
+}
+
+div.footer-area div.footer-company-logo img{
+  width: 3vw;
+}
+div.footer-area div.footer-company-logo span{
+  padding-left: 15px;
+  font-size: 1.5vw;
+}
+
+/* nav-menu css */
+ul.nav-menu li {
+  padding-right: 50px; /* 文字間の間隔を近づける */
+}
 
 /* スマホ用のスタイル */
+@media (max-width: 480px) {
+  ul.nav-menu li {
+    padding-right: 20px; /* スマホ用の文字間の間隔を近づける */
+  }
+}
+
 @media (max-width: 480px) {
   .top-image-area .top-message {
     font-size: 4vw;
@@ -165,23 +245,32 @@ div.company-summary-content hr {
   .service-summary-area .container-area {
     flex-direction: column;
     align-items: center;
+    text-align: center; /* 追加: 中央揃えにする */
   }
 
   .service-summary-area .container-1,
   .service-summary-area .container-2 {
     width: 100%;
     flex-basis: 100%;
+    padding: 10px; /* 追加: パディングを追加して余白を作る */
+  }
+
+  .service-summary-area img {
+    width: 100%;
+    height: auto; /* 追加: 画像の高さを自動調整 */
   }
 
   .member .container-area {
     flex-direction: column;
     align-items: center;
+    text-align: center; /* 追加: 中央揃えにする */
   }
 
   .member .container-1,
   .member .container-2 {
     width: 100%;
     flex-basis: 100%;
+    padding: 10px; /* 追加: パディングを追加して余白を作る */
   }
 
   .company-summary-content {
@@ -191,5 +280,36 @@ div.company-summary-content hr {
 
   .company-summary-content div {
     padding: 10px 0;
+  }
+
+  .footer-area {
+    padding: 25px 5% 10px; /* 余白を短く */
+  }
+
+  .footer-area .contact img {
+    width: 20vw;
+  }
+
+  .footer-area .contact h1 {
+    font-size: 5vw;
+  }
+
+  .footer-area .contact .right-arrow {
+    font-size: 10vw;
+  }
+
+  .footer-area ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-area ul li {
+    padding: 10px 0;
+    font-size: var(--font-size-lg);
+  }
+
+  .footer-company-logo {
+    margin-top: 10px; /* 余白を短く */
   }
 }

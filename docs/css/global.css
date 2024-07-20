@@ -202,8 +202,18 @@ div.footer-area div.footer-company-logo span{
   padding-left: 15px;
   font-size: 1.5vw;
 }
+/* nav-menu css */
+ul.nav-menu li {
+  padding-right: 50px; /* 文字間の間隔を近づける */
+}
 
 /* スマホ用のスタイル */
+@media (max-width: 480px) {
+  ul.nav-menu li {
+    padding-right: 20px; /* スマホ用の文字間の間隔を近づける */
+  }
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -228,7 +238,7 @@ div.footer-area div.footer-company-logo span{
   }
 
   .footer-area .contact img {
-    width: 10vw;
+    width: 20vw;
   }
 
   .footer-area .contact h1 {
@@ -258,4 +268,3 @@ div.footer-area div.footer-company-logo span{
     font-size: var(--font-size-lg);
   }
 }
-
