@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>クライミングウォント</title>
-    <link rel="icon" href="./image/header-company-logo.png" sizes="16x16" type="image/png" /> 
+    <link rel="icon" href="./image/company_logo.png" sizes="16x16" type="image/png" /> 
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
@@ -25,20 +25,26 @@
   </head>
   <body>
     <header>
-      <!-- header-company-logo -->
-      <div class="header-company-logo">
-        <a href="./index.html">
-          <img src="./image/header-company-logo.png">
-          <span>クライミングウォント</span>
-        </a>
+      <div class="header-content">
+        <!-- header-company-logo -->
+        <div class="header-company-logo">
+          <a href="./index.html">
+            <img src="./image/header-company-logo.svg", alt="クライミングウォント">
+          </a>
+          <ul class="nav-menu">
+            <li><a href="./index.html">会社概要</a></li>
+            <span class="nav-separator"></span>
+            <li><a href="./service.html">サービス</a></li>
+          </ul>  
+        </div>
+        <div class="header-contact">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR1CCb2YcfLYo8YkKpNaNOfLCMx6z9xrVOVpQmHbh4qh4gfw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+          <img src="./image/header_contact_button.svg", alt="お問い合わせ">
+          </a>
+        </div>
       </div>
-
-      <!-- nav-menu -->
-      <div class="nav-menu">
-        <ul class="nav-menu">
-          <li><a href="./index.html">会社概要</a></li>
-          <li><a href="./service.html">サービス</a></li>
-        </ul>
+      <div class="header-footer">
+        <img src="./image/navigation_orange_gradation.svg", alt="">
       </div>
     </header>
 
@@ -46,13 +52,12 @@
       <!-- top-image-area -->
       <div class="top-image-area">
         <div class="top-message">
-          やりたいことに多くの時間を使える世の中にする。<br>
-          しかし、やりたいことを目指しても合わずに途中で挫折したり、
-          別のことをやらざるを得なくなったり、新しいチャレンジをしなければいけないこともある。<br>
-          <br>
-          その際は目指していた山を途中で下山したり、
-          頂上で気持ち良く過ごしていても下山しなければならないが、これは大変でつらいこと。<br>
-          だから、登山、下山の両方のハードなところをサポートし本当にやりたいことを追求できる社会にしたい
+          <h1>本当にやりたいことに<br>多くの時間を使える社会を目指す</h1>
+          <p>
+            やりたいことを追求する中で、途中で挫折をしてしまい、別の新しいチャレンジをする必要が生じることがある。<br>
+            その際、目指していた山を途中で下山することや、新しい山に挑戦することは大変でつらい。<br>
+            登山と下山の両方における困難な部分をサポートし、本当にやりたいことを追求できる社会を実現する。<br>
+          </p>
         </div>
       </div>
 
@@ -68,7 +73,8 @@
             </div>
             <div class="short-description">第三者による退職者面談や相談の代行で組織改善</div>
             <div class="long-description">
-              退職代行を使われたりして、退職理由がほとんど分からない企業のために第三者による退職者面談や相談を提供することで本音を話しやすい環境を作り退職理由や悩みを聞き出します。<br>
+              退職代行を使われたりして、退職理由がほとんど分からない企業のために第三<br>
+              者による退職者面談や相談を提供することで本音を話しやすい環境を作り退職理由や悩みを聞き出します。<br>
               本音を話してもらいレポート化することで、改善ができるようになったり、退職代行や退職を止めたりすることができます。
             </div>
             <a class="view-more-button" href="./service.html">
@@ -85,6 +91,7 @@
 
       <!-- member -->
       <div class="member">
+        <div class="member-background"></div>
         <h3>MEMBER</h3>
         <h1>メンバー</h1>
         <div class="container-area">
@@ -109,82 +116,71 @@
 
       </div>
 
-      <!-- company-summary-title -->
+      <!-- company-summary -->
+      <div class="company-summary">
       <div class="company-summary-title">
         <h3>COMPANY</h3>
         <h1>会社概要</h1>
       </div>
-
-      <!-- company-summary-content -->
       <div class="company-summary-content">
-        <hr>
-        <div class="company-name">
-          会社名<br>
-          クライミングウォント株式会社
-        </div>
-
-        <hr>
-        <div class="address">
-          所在地<br>
-          〒150-0045<br>
-          東京都渋谷区神泉町10番15号 アネックス神泉301
-        </div>
-
-        <hr>
-        <div class="establishment-date">
-          設立<br>
-          2024年7月1日
-        </div>
-
-        <hr>
-        <div class="representative">
-          代表<br>
-          代表取締役社長 持田 貴洋
-        </div>
-
-        <hr>
-        <div class="capital-stock">
-          資本金<br>
-          400,000円
-        </div>
-
-        <hr>
-        <div class="business">
-          事業内容
-          <ul>
-            <li>退職インタビューサービス</li>
-            <li>人事業務のDX支援事業</li>
-            <li>DXによる業務改善の支援事業</li>
-          </ul>
-        </div>
+        <table class="company-info-table">
+          <tr>
+            <th>会社名</th>
+            <td>クライミングウォント株式会社</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒150-0045<br>東京都渋谷区神泉町10番15号 アネックス神泉301</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>2024年7月1日</td>
+          </tr>
+          <tr>
+            <th>代表</th>
+            <td>代表取締役社長 持田 貴洋</td>
+          </tr>
+          <tr>
+            <th>資本金</th>
+            <td>400,000円</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>
+              <ul>
+                <li>退職インタビューサービス</li>
+                <li>人事業務のDX支援事業</li>
+                <li>DXによる業務改善の支援事業</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
       </div>
     </main>
 
     <!-- footer -->
     <footer>
-      <div class="footer-area">
-        <hr>
-        <div class="contact">
-          <img src="./image/mail-aicon.png">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR1CCb2YcfLYo8YkKpNaNOfLCMx6z9xrVOVpQmHbh4qh4gfw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
-            <h1>お問い合わせ情報の入力</h1>
-          </a>
-          <span class="right-arrow">&rarr;</span>
+      <div class="footer-content">
+        <!-- footer-company-logo -->
+        <div class="footer-company-logo">
+          <a href="./index.html"><img src="./image/footer-company-logo.png", alt="クライミングウォント"></a>
+          <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+              <li><a href="./index.html">会社概要</a></li>
+              <li><a href="./service.html">サービス</a></li>
+            </ul>
+          </nav>
         </div>
-        <hr>
-
-        <ul>
-          <li><a href="./index.html">会社概要</a></li>
-          <li><a href="./service.html">サービス</a></li>
-        </ul>
-        <hr>
-
-          <div class="footer-company-logo">
-          <a href="./index.html">
-            <img src="./image/footer-company-logo.png">
-            <span>クライミングウォント</span>
-          </a>
+        <div class="footer-contact-container">
+          <div class="footer-content">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR1CCb2YcfLYo8YkKpNaNOfLCMx6z9xrVOVpQmHbh4qh4gfw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+              <img src="./image/footer_contact_button.png", alt="お問い合わせ">
+            </a>
           </div>
+        </div>  
+      </div>
+      <div class="footer-copyright">
+        <p>©︎ ClimbingWant Corporation</p>
       </div>
     </footer>
   </body>
