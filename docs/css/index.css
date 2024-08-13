@@ -1,22 +1,45 @@
-/* top-image-area css */
-div.top-image-area {
-  background-image: url("../image/airplane_new.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
+main {
+  margin-top: -4px;
 }
 
-div.top-image-area div.top-message {
-  padding: 10% 10%;
-  font-size: 2vw;
+/* top-image-area css */
+.top-image-area {
+  background-image: url("../image/airplane.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 0;
   color: #ffffff;
-  text-align: center;
+}
+
+.top-message {
+  max-width: 1200px;
+  margin: 0 auto 0 0;
+  padding: 50px 20px 0 50px;
+  text-align: left;
+  transform: translate(3%, 15%);
+}
+
+.top-message h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.top-message p {
+  font-size: 1.0rem;
+  line-height: 1.8;
+  max-width: 1200px;
 }
 
 /* service-summary-area css */
 div.service-summary-area {
   background-color: rgba(255, 188, 155, 0.2);
-  padding: 100px 50px;
+  padding: 75px 0;
 }
 
 div.service-summary-area div.container-area {
@@ -29,40 +52,53 @@ div.service-summary-area div.container-2 {
   flex-basis: 45%;
 }
 
+div.service-summary-area div.container-1 {
+  padding-left: 5.5%;
+}
+
+
 div.service-summary-area div.container-1 h3 {
-  color: #febc9b;
+  color: rgba(243, 121, 71, 0.55);
   margin: 0px;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 
 div.service-summary-area div.container-1 h1 {
-  margin: 10px 0px;
-  font-size: 3vw;
-  color: #f37947;
+  margin: -5px 0px -2.5px 0px;
+  font-size: 4.4vw;
+  color: #F37947;
+  font-family: var(--font-noto-sans-jp);
+  font-weight: 700;
 }
 
 div.service-summary-area div.service-name {
-  font-size: 1.5vw;
+  margin: 5px 0px 7.5px 0px;
+  font-size: 2.75vw;
   color: #f37947;
+  font-weight: bold;
 }
 
 div.service-summary-area div.short-description {
-  margin: 15px 0px;
   font-size: 1.3vw;
+  color: #555555;
+  font-weight: bold;
 }
 
 div.service-summary-area div.long-description {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   font-size: 1vw;
   line-height: 2em;
+  color: #555555;
+  font-weight: 500;
 }
 
 div.service-summary-area a.view-more-button {
   display: inline-block;
-  background-color: #f89a6f;
+  background-color: #F37947;
   color: #ffffff;
+  font-size: 1.3vw;
   text-decoration: none;
-  padding: 20px 20px 20px 70px;
+  padding: 15px 20px 15px 70px;
   border-radius: 30px;
 }
 
@@ -72,21 +108,40 @@ div.service-summary-area div.container-2 img {
 
 /* member area */
 div.member {
-  padding: 50px;
+  position: relative;
+  padding: 50px 70px 45px 50px;
+  overflow: hidden;
 }
 
-div.member h3 {
-  color: #cccccc;
-  margin: 0px;
-  font-size: 1.4vw;
+div.member-background {
+  position: absolute;
+  right: -50px;
+  bottom: 0px;
+  width: 600px;
+  height: 600px;
+  background-image: url('../image/logo_backgroud.png'); /* ロゴ画像のパスを指定 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
 }
+
+
+div.member h3 {
+  color: rgba(153, 153, 153, 0.8);
+  margin: 0px;
+  font-size: 1.2vw;
+}
+
 div.member h1 {
-  margin: 10px 0px;
-  color: #999999;
-  font-size: 3vw;
+  margin: -5px 0px -2.5px 0px;
+  color: #777777;
+  font-size: 4.4vw;
+  font-weight: bold;
 }
 
 div.member div.container-area {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -100,60 +155,94 @@ div.member div.container-1 img {
 }
 
 div.member div.container-2 {
-  flex-basis: 60%;
+  flex-basis: 65%;
+  margin-top: 75px;
 }
 
 div.member div.container-2 h2.post, 
 div.member div.container-2 h2.name-alphabet {
-  color: #999999;
+  color: #777777;
   margin: 0px;
+  font-size: 1.6vw;
 }
 
 div.member div.container-2 h1.name {
-  color: #000000;
+  color: #444444;
   margin: 0px;
 }
 
 div.member div.container-2 div.career {
+  color: #555555;
   margin-top: 20px;
   font-size: 1.25vw;
-
+  width: 90%;
 }
 
 
-/* company-summary-title css */
+/* company-summary css */
+div.company-summary {
+  background-color: rgba(212, 249, 242, 0.3);
+  padding: 70px 0 100px 0;
+}
+
 div.company-summary-title {
   padding: 20px 50px;
 }
 
 div.company-summary-title h3 {
-  color: #cccccc;
+  color: rgba(4, 165, 159, 0.5);
   margin: 0px;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 div.company-summary-title h1 {
-  margin: 10px 0px;
-  color: #999999;
-  font-size: 3vw;
+  margin: -5px 0px -2.5px 0px;
+  color: #04A59F;
+  font-size: 4.4vw;
 }
 
-/* company-summary-content css */
-div.company-summary-content {
-  margin: 0px 0px 100px 100px;
-  width: 1000px;
+.company-summary-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-div.company-summary-content div {
-  padding: 20px 0px;
+.company-info-table {
+  width: 96.3%;
+  border-collapse: collapse;
 }
 
-div.company-summary-content hr {
-  background-color: #e5e7eb;
-  height: 2px;
-  border: none;
-
+.company-info-table tr:last-child th,
+.company-info-table tr:last-child td {
+  border-bottom: none;
 }
 
+.company-info-table th,
+.company-info-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #B0D3CF;
+}
+
+
+.company-info-table th {
+  width: 10%;
+  color: #444444;
+  font-size: 1.2vw;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.company-info-table td {
+  width: 90%;
+  color: #333;
+  font-size: 1.2vw;
+  line-height: 2.5;
+}
+
+.company-info-table ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
 
 /* スマホ用のスタイル */
 @media (max-width: 480px) {
