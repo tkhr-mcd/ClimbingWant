@@ -2,6 +2,11 @@ main {
   margin-top: -4px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* top-image-area css */
 .top-image-area {
   background-image: url("../image/airplane.png");
@@ -24,14 +29,16 @@ main {
 }
 
 .top-message h1 {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
+  font-family: "Zen Kaku Gothic New";
   line-height: 1.2;
   margin-bottom: 30px;
   font-weight: bold;
 }
 
 .top-message p {
-  font-size: 1.0rem;
+  font-size: 1vw;
+  font-family: "Zen Kaku Gothic New";
   line-height: 1.8;
   max-width: 1200px;
 }
@@ -39,12 +46,13 @@ main {
 /* service-summary-area css */
 div.service-summary-area {
   background-color: rgba(255, 188, 155, 0.2);
-  padding: 75px 0;
+  padding: 5% 0;
 }
 
 div.service-summary-area div.container-area {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 div.service-summary-area div.container-1,
@@ -144,6 +152,7 @@ div.member div.container-area {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 div.member div.container-1 {
@@ -244,41 +253,72 @@ div.company-summary-title h1 {
   padding: 0 0 0 20px;
 }
 
-/* スマホ用のスタイル */
-@media (max-width: 480px) {
-  .top-image-area .top-message {
+/* メディアクエリ */
+/* タブレット向けスタイル */
+@media screen and (max-width: 1024px) {
+  .top-message h1 {
+    font-size: 4.5vw;
+  }
+  
+  .top-message p {
+    font-size: 1.5vw;
+  }
+  
+  div.service-summary-area div.container-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div.service-summary-area div.container-1,
+  div.service-summary-area div.container-2 {
+    flex-basis: 100%;
+    padding: 0 5%;
+  }
+  
+  div.member div.container-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div.member div.container-1,
+  div.member div.container-2 {
+    flex-basis: 100%;
+  }
+}
+
+/* スマートフォン向けスタイル */
+@media screen and (max-width: 480px) {
+  .top-message h1 {
+    font-size: 6vw;
+  }
+  
+  .top-message p {
+    font-size: 3vw;
+  }
+  
+  div.service-summary-area div.service-name {
+    font-size: 5vw;
+  }
+  
+  div.service-summary-area div.short-description {
+    font-size: 3.5vw;
+  }
+  
+  div.service-summary-area div.long-description {
+    font-size: 3vw;
+  }
+  
+  div.member div.container-2 h2.post, 
+  div.member div.container-2 h2.name-alphabet {
     font-size: 4vw;
-    padding: 20px;
   }
-
-  .service-summary-area .container-area {
-    flex-direction: column;
-    align-items: center;
+  
+  div.member div.container-2 div.career {
+    font-size: 3vw;
   }
-
-  .service-summary-area .container-1,
-  .service-summary-area .container-2 {
-    width: 100%;
-    flex-basis: 100%;
-  }
-
-  .member .container-area {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .member .container-1,
-  .member .container-2 {
-    width: 100%;
-    flex-basis: 100%;
-  }
-
-  .company-summary-content {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .company-summary-content div {
-    padding: 10px 0;
+  
+  .company-info-table th,
+  .company-info-table td {
+    font-size: 3vw;
   }
 }
