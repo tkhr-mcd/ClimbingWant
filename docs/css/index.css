@@ -29,11 +29,15 @@ img {
 }
 
 .top-message h1 {
-  font-size: 3.5vw;
+  font-size: 3.3vw;
   font-family: "Zen Kaku Gothic New";
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 30px;
   font-weight: bold;
+}
+
+.top-message h1 .large-text {
+  font-size: 3.5vw;  /* 大きくしたい文字のサイズ */
 }
 
 .top-message p {
