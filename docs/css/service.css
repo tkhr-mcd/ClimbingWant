@@ -1,12 +1,6 @@
-/* service-name */
-div.service-name {
-  padding: 20px;
-  color: var(--color-coral);
-  font-size: var(--font-size-11xl);
-}
-
 /* service-top-image */
 div.service-top-image img {
+  padding-top: 48px;
   width: 100%;
 }
 
