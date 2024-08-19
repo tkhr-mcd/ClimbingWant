@@ -61,7 +61,7 @@ div.speak-mind-can {
 }
 
 div.speak-mind-can > h1{
-  color: #777777;
+  color: #555555;
   font-size: 3vw;
   font-weight: bold;
 }
@@ -96,8 +96,8 @@ div.speak-mind-feature {
 div.speak-mind-feature > h1 {
   padding-top: 5vw;
   padding-bottom: 1vw;
-  margin-left: 8%;
-  color: #777777;
+  margin-left: 5%;
+  color: #555555;
   font-size: 3vw;
   font-weight: bold;
 }
@@ -141,44 +141,35 @@ div.speak-mind-feature div.description {
 
 /* speak-mind-user-voice css */
 div.speak-mind-user-voice {
-  margin: 50px auto;
-  padding: 50px 0px;
-  width: 90%;
+  padding: 50px 0;
+  width: 100%;
   background-color: rgba(255, 188, 155, 0.2);
-  border-radius: 30px;
 }
 
 div.speak-mind-user-voice > h1 {
   margin-left: 5%;
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
-div.speak-mind-user-voice div.container-area {
+div.speak-mind-user-voice div.user-voice-content {
   margin: 0px 10%;
 }
 
-div.speak-mind-user-voice div.container {
+div.speak-mind-user-voice div.user-info {
   display: flex;
-  margin-bottom: 50px;
 }
 
-div.speak-mind-user-voice div.user-image-big {
-  flex-basis: 30%;
+
+div.speak-mind-user-voice div.user-image {
+  display: inline-block;
+  flex-basis: 10%;
+  margin-right: 20px;
 }
 
-div.speak-mind-user-voice div.user-image-big img {
-  display: block;
-  margin: auto;
-  width: 250px;
-}
-
-div.speak-mind-user-voice div.user-image-small {
-  flex-basis: 5%;
-}
-
-div.speak-mind-user-voice div.user-image-small img {
+div.speak-mind-user-voice div.user-image img {
   width: 100%;
-  max-width: 100px;
-  min-width: 50px;
 }
 
 
@@ -186,26 +177,35 @@ div.speak-mind-user-voice div.description {
   flex-basis: 65%;
 }
 
-div.speak-mind-user-voice  h3.user-profile {
-  margin: 5px 0px 0px;
+div.speak-mind-user-voice  span.user-profile {
+  margin: 0;
+  font-size: 1.25vw;
+
 }
 
-div.speak-mind-user-voice  h3.voice-title {
+div.speak-mind-user-voice  h1.voice-title {
+  margin:0;
+  font-size: 2vw;
   color: #f37947;
-  margin: 5px 0px 0px;
+
 }
 
-div.speak-mind-user-voice .triangle {
-  width: 30px;
-  background-color: #ffffff;
-  clip-path: polygon(0 50%, 30% 100%, 100% 100%);
+div.speak-mind-user-voice .voice-detail {
+  position: relative;
+  margin-bottom: 50px;
+}
+div.speak-mind-user-voice .voice-detail > img {
+  width: 100%;
 }
 
-div.speak-mind-user-voice ul {
-  margin: 0px;
-  background-color: #ffffff;
-  border-radius: 15px;
+div.speak-mind-user-voice .voice-detail p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
 }
+
 
 div.speak-mind-user-voice li {
   padding: 8px;
