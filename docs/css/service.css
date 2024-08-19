@@ -217,6 +217,12 @@ div.introduction-flow {
   width: 90%;
 }
 
+div.introduction-flow > h1 {
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
 div.introduction-flow div.container-area-1 {
   display: flex;
   justify-content: space-between;
@@ -239,12 +245,18 @@ div.introduction-flow div.container-2,
 div.introduction-flow div.container-4,
 div.introduction-flow div.container-6 {
   flex-basis: 5%;
-  color: #f37947;
-  font-size: 100px;
+  text-align: center;
 }
 
 div.introduction-flow img {
   width: 100%;
+}
+
+div.introduction-flow .container-2 img, 
+div.introduction-flow .container-4 img,
+div.introduction-flow .container-6 img {
+  width: 50%;
+
 }
 
 div.introduction-flow h3.title {
