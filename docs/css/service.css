@@ -60,7 +60,7 @@ div.speak-mind-can {
   width: 90%;
 }
 
-div.speak-mind-can h1{
+div.speak-mind-can > h1{
   color: #777777;
   font-size: 3vw;
   font-weight: bold;
@@ -94,14 +94,17 @@ div.speak-mind-feature {
 }
 
 div.speak-mind-feature > h1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
   margin-left: 8%;
+  color: #777777;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 div.speak-mind-feature .container-area {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: auto;
   width: 90%;
@@ -109,15 +112,27 @@ div.speak-mind-feature .container-area {
 }
 
 div.speak-mind-feature .container {
-  display: inline-block;
   margin-bottom: 50px;
   padding: 20px;
   width: 40%;
   background-color: white;
 }
 
-div.speak-mind-feature img {
-  width: 100%;
+div.speak-mind-feature .container > .heading {
+  display: flex;
+  align-items: center;
+}
+
+div.speak-mind-feature .container > .heading > img {
+  display: inline-block;
+  height: 100%;
+  padding-right: 10px;
+}
+
+div.speak-mind-feature .container > .heading > h2 {
+  display: inline-block;
+  color: #04A59F;
+  margin: 0;
 }
 
 div.speak-mind-feature div.description {
