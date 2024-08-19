@@ -1,8 +1,72 @@
 /* service-top-image */
 div.service-top-image img {
+  display: block;
   padding-top: 48px;
   width: 100%;
 }
+
+/* service-summary-area css */
+div.service-summary-area {
+  background-color: rgba(255, 188, 155, 0.2);
+  padding: 5% 0;
+  margin: 0;
+}
+
+div.service-summary-area div.container-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.service-summary-area div.container-1,
+div.service-summary-area div.container-2 {
+  flex-basis: 45%;
+}
+
+div.service-summary-area div.container-1 {
+  padding-left: 5.5%;
+}
+
+
+div.service-summary-area div.container-1 h3 {
+  color: rgba(243, 121, 71, 0.55);
+  margin: 0px;
+  font-size: 1.2vw;
+}
+
+div.service-summary-area div.container-1 h1 {
+  margin: -5px 0px -2.5px 0px;
+  font-size: 4.4vw;
+  color: #F37947;
+  font-family: var(--font-noto-sans-jp);
+  font-weight: 700;
+}
+
+div.service-summary-area div.service-name {
+  margin: 5px 0px 7.5px 0px;
+  font-size: 2.75vw;
+  color: #f37947;
+  font-weight: bold;
+}
+
+div.service-summary-area div.short-description {
+  font-size: 1.3vw;
+  color: #555555;
+  font-weight: bold;
+}
+
+div.service-summary-area div.long-description {
+  margin-bottom: 5px;
+  font-size: 1vw;
+  line-height: 2em;
+  color: #555555;
+  font-weight: 500;
+}
+
+div.service-summary-area div.container-2 img {
+  width: 100%;
+}
+
 
 /* speak-mind-can css */
 div.speak-mind-can {
@@ -34,7 +98,7 @@ div.speak-mind-can .detail {
 
 /* speak-mind-feature css */
 div.speak-mind-feature {
-  background-color: rgba(255, 188, 155, 0.2);
+  background-color: rgba(212, 249, 242, 0.3);;
 }
 
 div.speak-mind-feature > h1 {
@@ -48,14 +112,16 @@ div.speak-mind-feature .container-area {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  width: 55%;
+  width: 90%;
   
 }
 
 div.speak-mind-feature .container {
   display: inline-block;
   margin-bottom: 50px;
+  padding: 20px;
   width: 40%;
+  background-color: white;
 }
 
 div.speak-mind-feature img {
