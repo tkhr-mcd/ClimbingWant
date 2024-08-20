@@ -314,7 +314,6 @@ div.frequently-asked-questions div.answer {
 /* スマホ用のスタイル */
 @media screen and (max-width: 480px) {
   /* service-summary-area css */
-
   div.service-summary-area div.container-area {
     display: flex;
     flex-direction: column-reverse;
@@ -350,6 +349,7 @@ div.frequently-asked-questions div.answer {
   /* speak-mind-can css */
   div.speak-mind-can {
     margin-top: 30px;
+    margin-bottom: 0;
   }
 
   div.speak-mind-can > h1{
@@ -371,6 +371,39 @@ div.frequently-asked-questions div.answer {
   }
 
   div.speak-mind-can .detail {
+    font-size: 3.5vw;
+  }
+
+  /* speak-mind-feature css */
+  div.speak-mind-feature > h1 {
+    margin-left: 5%;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    font-size: 5vw;
+  }
+
+  div.speak-mind-feature .container-area {
+    display: block;
+    width: 90%;
+  }
+
+  div.speak-mind-feature .container {
+    margin-bottom: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.speak-mind-feature .container > .heading > img {
+    height: 5vw;
+    padding-right: 5px;
+  }
+
+  div.speak-mind-feature .container > .heading > h2 {
+    font-size: 4vw;
+  }
+
+  div.speak-mind-feature div.description {
     font-size: 3.5vw;
   }
 
