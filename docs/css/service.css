@@ -333,18 +333,45 @@ div.frequently-asked-questions div.answer {
   }
 
   div.service-summary-area div.service-name {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   div.service-summary-area div.short-description {
     margin-bottom: 5px;
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   div.service-summary-area div.long-description {
     margin-bottom: 0;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     line-height: 1.75em;
+  }
+
+  /* speak-mind-can css */
+  div.speak-mind-can {
+    margin-top: 30px;
+  }
+
+  div.speak-mind-can > h1{
+    font-size: 5vw;
+  }
+
+  div.speak-mind-can .container-area {
+    display: flex;
+  }
+
+  div.speak-mind-can .container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  div.speak-mind-can h2 {
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  div.speak-mind-can .detail {
+    font-size: 3.5vw;
   }
 
   .speak-mind-can .container-area,
