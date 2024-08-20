@@ -1,19 +1,69 @@
-/* service-name */
-div.service-name {
-  padding: 20px;
-  color: var(--color-coral);
-  font-size: var(--font-size-11xl);
-}
-
 /* service-top-image */
 div.service-top-image img {
+  display: block;
+  padding-top: 48px;
   width: 100%;
 }
+
+/* service-summary-area css */
+div.service-summary-area {
+  background-color: rgba(255, 188, 155, 0.2);
+  padding: 5% 0;
+  margin: 0;
+}
+
+div.service-summary-area div.container-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.service-summary-area div.container-1,
+div.service-summary-area div.container-2 {
+  flex-basis: 45%;
+}
+
+div.service-summary-area div.container-1 {
+  padding-left: 5.5%;
+}
+
+
+div.service-summary-area div.service-name {
+  margin: 5px 0px 7.5px 0px;
+  font-size: 2.75vw;
+  color: #f37947;
+  font-weight: bold;
+}
+
+div.service-summary-area div.short-description {
+  font-size: 1.3vw;
+  color: #555555;
+  font-weight: bold;
+}
+
+div.service-summary-area div.long-description {
+  margin-bottom: 5px;
+  font-size: 1vw;
+  line-height: 2em;
+  color: #555555;
+  font-weight: 500;
+}
+
+div.service-summary-area div.container-2 img {
+  width: 100%;
+}
+
 
 /* speak-mind-can css */
 div.speak-mind-can {
   margin: 100px auto;
   width: 90%;
+}
+
+div.speak-mind-can > h1{
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 div.speak-mind-can .container-area {
@@ -31,86 +81,97 @@ div.speak-mind-can img {
 
 div.speak-mind-can h2 {
   color: #f37947;
+  text-align: center;
 }
 
 div.speak-mind-can .detail {
   font-size: 18px;
+  color: #555555;
 }
 
 /* speak-mind-feature css */
 div.speak-mind-feature {
-  background-color: rgba(255, 188, 155, 0.2);
+  background-color: rgba(212, 249, 242, 0.3);;
 }
 
 div.speak-mind-feature > h1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-left: 8%;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  margin-left: 5%;
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 div.speak-mind-feature .container-area {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: auto;
-  width: 55%;
+  width: 90%;
   
 }
 
 div.speak-mind-feature .container {
-  display: inline-block;
   margin-bottom: 50px;
+  padding: 20px;
   width: 40%;
+  background-color: white;
 }
 
-div.speak-mind-feature img {
-  width: 100%;
+div.speak-mind-feature .container > .heading {
+  display: flex;
+  align-items: center;
+}
+
+div.speak-mind-feature .container > .heading > img {
+  display: inline-block;
+  height: 100%;
+  padding-right: 10px;
+}
+
+div.speak-mind-feature .container > .heading > h2 {
+  display: inline-block;
+  color: #04A59F;
+  margin: 0;
 }
 
 div.speak-mind-feature div.description {
   margin-top: 10px;
+  color: #555555;
 }
 
 /* speak-mind-user-voice css */
 div.speak-mind-user-voice {
-  margin: 50px auto;
-  padding: 50px 0px;
-  width: 90%;
+  padding: 50px 0;
+  width: 100%;
   background-color: rgba(255, 188, 155, 0.2);
-  border-radius: 30px;
 }
 
 div.speak-mind-user-voice > h1 {
   margin-left: 5%;
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
-div.speak-mind-user-voice div.container-area {
+div.speak-mind-user-voice div.user-voice-content {
   margin: 0px 10%;
 }
 
-div.speak-mind-user-voice div.container {
+div.speak-mind-user-voice div.user-info {
   display: flex;
-  margin-bottom: 50px;
 }
 
-div.speak-mind-user-voice div.user-image-big {
-  flex-basis: 30%;
+
+div.speak-mind-user-voice div.user-image {
+  display: inline-block;
+  flex-basis: 10%;
+  margin-right: 20px;
 }
 
-div.speak-mind-user-voice div.user-image-big img {
-  display: block;
-  margin: auto;
-  width: 250px;
-}
-
-div.speak-mind-user-voice div.user-image-small {
-  flex-basis: 5%;
-}
-
-div.speak-mind-user-voice div.user-image-small img {
+div.speak-mind-user-voice div.user-image img {
   width: 100%;
-  max-width: 100px;
-  min-width: 50px;
 }
 
 
@@ -118,26 +179,37 @@ div.speak-mind-user-voice div.description {
   flex-basis: 65%;
 }
 
-div.speak-mind-user-voice  h3.user-profile {
-  margin: 5px 0px 0px;
+div.speak-mind-user-voice  span.user-profile {
+  margin: 0;
+  font-size: 1.25vw;
+  color: #3B1800;
+
 }
 
-div.speak-mind-user-voice  h3.voice-title {
+div.speak-mind-user-voice  h1.voice-title {
+  margin:0;
+  font-size: 2vw;
   color: #f37947;
-  margin: 5px 0px 0px;
+
 }
 
-div.speak-mind-user-voice .triangle {
-  width: 30px;
-  background-color: #ffffff;
-  clip-path: polygon(0 50%, 30% 100%, 100% 100%);
+div.speak-mind-user-voice .voice-detail {
+  position: relative;
+  margin-bottom: 50px;
+}
+div.speak-mind-user-voice .voice-detail > img {
+  width: 100%;
 }
 
-div.speak-mind-user-voice ul {
-  margin: 0px;
-  background-color: #ffffff;
-  border-radius: 15px;
+div.speak-mind-user-voice .voice-detail p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
+  color: #444444;
 }
+
 
 div.speak-mind-user-voice li {
   padding: 8px;
@@ -149,6 +221,12 @@ div.introduction-flow {
   width: 90%;
 }
 
+div.introduction-flow > h1 {
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
 div.introduction-flow div.container-area-1 {
   display: flex;
   justify-content: space-between;
@@ -158,6 +236,7 @@ div.introduction-flow div.container-area-2 {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  color: #192B2A
 }
 
 div.introduction-flow div.container-1,
@@ -171,12 +250,18 @@ div.introduction-flow div.container-2,
 div.introduction-flow div.container-4,
 div.introduction-flow div.container-6 {
   flex-basis: 5%;
-  color: #f37947;
-  font-size: 100px;
+  text-align: center;
 }
 
 div.introduction-flow img {
   width: 100%;
+}
+
+div.introduction-flow .container-2 img, 
+div.introduction-flow .container-4 img,
+div.introduction-flow .container-6 img {
+  width: 50%;
+
 }
 
 div.introduction-flow h3.title {
@@ -188,6 +273,12 @@ div.introduction-flow h3.title {
 div.frequently-asked-questions {
   margin: 100px auto;
   width: 90%;
+}
+
+div.frequently-asked-questions > h1 {
+  color: #555555;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 div.frequently-asked-questions div.container-area {
@@ -204,6 +295,7 @@ div.frequently-asked-questions div.question {
 div.frequently-asked-questions div.question h1{
   padding-left: 30px;
   margin: 0px;
+  color: #4e3c30;
 }
 
 div.frequently-asked-questions hr {
@@ -215,6 +307,7 @@ div.frequently-asked-questions hr {
 
 div.frequently-asked-questions div.answer {
   margin-bottom: 50px;
+  color: #192B2A
 }
 
 
