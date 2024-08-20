@@ -207,6 +207,7 @@ div.company-summary-title h3 {
   margin: 0px;
   font-size: 1.2vw;
 }
+
 div.company-summary-title h1 {
   margin: -5px 0px -2.5px 0px;
   color: #04A59F;
@@ -235,7 +236,6 @@ div.company-summary-title h1 {
   text-align: left;
   border-bottom: 1px solid #B0D3CF;
 }
-
 
 .company-info-table th {
   width: 10%;
@@ -294,7 +294,6 @@ div.company-summary-title h1 {
     padding: 0 30px;
   }
 
-
   .section-subtitle,
   .section-title {
     text-align: start;
@@ -338,7 +337,8 @@ div.company-summary-title h1 {
   }
 
   .view-more-button {
-    padding: 15px 15px 10px 0;
+    padding: 10px 15px 0px 0;
+    width: 155px;
   }
 
   /* member area */
