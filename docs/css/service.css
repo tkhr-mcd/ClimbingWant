@@ -383,15 +383,15 @@ div.frequently-asked-questions div.answer {
   }
 
   div.speak-mind-feature .container-area {
-    display: block;
     width: 90%;
   }
 
   div.speak-mind-feature .container {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
   }
 
   div.speak-mind-feature .container > .heading > img {
