@@ -357,7 +357,7 @@ div.frequently-asked-questions div.answer {
   }
 
   div.speak-mind-can .container-area {
-    display: flex;
+    display: block;
   }
 
   div.speak-mind-can .container {
@@ -405,37 +405,6 @@ div.frequently-asked-questions div.answer {
 
   div.speak-mind-feature div.description {
     font-size: 3.5vw;
-  }
-
-  .speak-mind-can .container-area,
-  .speak-mind-feature .container-area,
-  .speak-mind-user-voice .container-area,
-  .introduction-flow .container-area-1,
-  .introduction-flow .container-area-2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .speak-mind-can .container,
-  .speak-mind-feature .container,
-  .speak-mind-user-voice .container,
-  .introduction-flow .container-1,
-  .introduction-flow .container-3,
-  .introduction-flow .container-5,
-  .introduction-flow .container-7,
-  .introduction-flow .container-2,
-  .introduction-flow .container-4,
-  .introduction-flow .container-6 {
-    width: 100%;
-    flex-basis: 100%;
-  }
-
-  .frequently-asked-questions .container-area {
-    padding: 50px 20px;
-  }
-
-  .frequently-asked-questions .question h1 {
-    font-size: var(--font-size-lg);
   }
 
 }
