@@ -48,74 +48,75 @@ img {
 }
 
 /* service-summary-area css */
-div.service-summary-area {
+.service-summary-area {
   background-color: rgba(255, 188, 155, 0.2);
   padding: 5% 0;
 }
 
-div.service-summary-area div.container-area {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.container {
+  margin: 0;
+  padding-left: 50px;
 }
 
-div.service-summary-area div.container-1,
-div.service-summary-area div.container-2 {
-  flex-basis: 45%;
-}
-
-div.service-summary-area div.container-1 {
-  padding-left: 5.5%;
-}
-
-
-div.service-summary-area div.container-1 h3 {
+.section-subtitle {
   color: rgba(243, 121, 71, 0.55);
-  margin: 0px;
+  margin: 0;
   font-size: 1.2vw;
 }
 
-div.service-summary-area div.container-1 h1 {
-  margin: -5px 0px -2.5px 0px;
+.section-title {
+  margin-top: -5px;
+  margin-bottom: 0;
   font-size: 4.4vw;
   color: #F37947;
-  font-family: var(--font-noto-sans-jp);
   font-weight: 700;
 }
 
-div.service-summary-area div.service-name {
-  margin: 5px 0px 7.5px 0px;
+.service-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.service-text {
+  flex-basis: 55%;
+}
+
+.service-name {
   font-size: 2.75vw;
   color: #f37947;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-div.service-summary-area div.short-description {
+.short-description {
   font-size: 1.3vw;
   color: #555555;
   font-weight: bold;
+  margin: 0;
 }
 
-div.service-summary-area div.long-description {
-  margin-bottom: 5px;
+.long-description {
   font-size: 1vw;
   line-height: 2em;
   color: #555555;
-  font-weight: 500;
+  margin: 0;
 }
 
-div.service-summary-area a.view-more-button {
+.view-more-button {
   display: inline-block;
-  background-color: #F37947;
-  color: #ffffff;
-  font-size: 1.3vw;
-  text-decoration: none;
-  padding: 15px 20px 15px 70px;
-  border-radius: 30px;
+  padding: 20px 20px 15px 0px;
 }
 
-div.service-summary-area div.container-2 img {
-  width: 100%;
+.service-image {
+  flex-basis: 40%;
+}
+
+.service-image img {
+  max-height: auto;
 }
 
 /* member area */
@@ -191,7 +192,6 @@ div.member div.container-2 div.career {
   width: 90%;
 }
 
-
 /* company-summary css */
 div.company-summary {
   background-color: rgba(212, 249, 242, 0.3);
@@ -260,6 +260,7 @@ div.company-summary-title h1 {
 
 /* スマートフォン向けスタイル */
 @media (max-width: 480px) {  
+  /* top-image-area css */
   .top-image-area {
     min-height: 23vh;
     background-size: 100% 100%;
@@ -284,18 +285,63 @@ div.company-summary-title h1 {
     margin: 0;
   }
   
-  div.service-summary-area div.service-name {
+  /* service-summary-area css */
+  .service-summary-area {  
+    padding: 10px 0;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+
+  .section-subtitle,
+  .section-title {
+    text-align: start;
+  }
+
+  .section-subtitle {
+    margin-top: 8px;
+    font-size: 1.3vw;
+  }
+
+  .section-title {
+    font-size: 5.5vw;
+  }
+
+  .service-content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .service-image {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .service-text {
+    flex-basis: 100%;
+  }
+
+  .service-name {
     font-size: 5vw;
   }
-  
-  div.service-summary-area div.short-description {
+
+  .short-description {
     font-size: 3.5vw;
   }
-  
-  div.service-summary-area div.long-description {
-    font-size: 3vw;
+
+  .long-description {
+    margin-top: 5px;
+    font-size: 2.3vw;
+    line-height: 1.6;
   }
-  
+
+  .view-more-button {
+    padding: 15px 15px 10px 0;
+  }
+
+  /* member area */
   div.member div.container-2 h2.post, 
   div.member div.container-2 h2.name-alphabet {
     font-size: 4vw;
