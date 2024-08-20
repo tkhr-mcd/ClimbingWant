@@ -335,3 +335,47 @@ footer {
   }
 }
 
+/* メディアクエリ：スマートフォン向けスタイル */
+@media screen and (max-width: 767px) {
+  .header-content {
+    padding: 10px 15px;
+  }
+  
+  .header-company-logo img {
+    max-height: 30px;
+  }
+  
+  .header-contact img {
+    max-height: 25px;
+  }
+}
+
+/* メディアクエリ：デスクトップ向けスタイル */
+@media screen and (min-width: 768px) {
+  .header-content {
+    padding: 15px 50px;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: var(--color-darkgray);
+    font-family: var(--font-noto-sans-jp);
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
