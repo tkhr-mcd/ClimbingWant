@@ -205,15 +205,11 @@ div.speak-mind-user-voice .voice-detail p {
   position: absolute;
   top: 10px;
   left: 10px;
-  line-height: 2.5vw;
   font-size: 1.5vw;
+  line-height: 2.75vw;
   color: #444444;
 }
 
-
-div.speak-mind-user-voice li {
-  padding: 8px;
-}
 
 /* introduction-flow css */
 div.introduction-flow {
@@ -230,13 +226,7 @@ div.introduction-flow > h1 {
 div.introduction-flow div.container-area-1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-div.introduction-flow div.container-area-2 {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  color: #192B2A
+  color: #192B2A;
 }
 
 div.introduction-flow div.container-1,
@@ -251,6 +241,7 @@ div.introduction-flow div.container-4,
 div.introduction-flow div.container-6 {
   flex-basis: 5%;
   text-align: center;
+  padding-top: 7vw;
 }
 
 div.introduction-flow img {
@@ -312,35 +303,256 @@ div.frequently-asked-questions div.answer {
 
 
 /* スマホ用のスタイル */
-@media (max-width: 480px) {
-  .speak-mind-can .container-area,
-  .speak-mind-feature .container-area,
-  .speak-mind-user-voice .container-area,
-  .introduction-flow .container-area-1,
-  .introduction-flow .container-area-2 {
-    flex-direction: column;
+@media screen and (max-width: 480px) {
+  /* service-summary-area css */
+  div.service-summary-area div.container-area {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  div.service-summary-area div.container-1,
+  div.service-summary-area div.container-2 {
+    display: block;
+  }
+
+  div.service-summary-area div.container-1 {
+    padding-left: 0;
+  }
+
+  div.service-summary-area div.service-name {
+    font-size: 5vw;
+  }
+
+  div.service-summary-area div.short-description {
+    margin-bottom: 5px;
+    font-size: 4vw;
+  }
+
+  div.service-summary-area div.long-description {
+    margin-bottom: 0;
+    font-size: 3.5vw;
+    line-height: 1.75em;
+  }
+
+  /* speak-mind-can css */
+  div.speak-mind-can {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  div.speak-mind-can > h1{
+    font-size: 5vw;
+  }
+
+  div.speak-mind-can .container-area {
+    display: block;
+  }
+
+  div.speak-mind-can .container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  div.speak-mind-can h2 {
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  div.speak-mind-can .detail {
+    font-size: 3.5vw;
+  }
+
+  /* speak-mind-feature css */
+  div.speak-mind-feature > h1 {
+    margin-left: 5%;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    font-size: 5vw;
+  }
+
+  div.speak-mind-feature .container-area {
+    width: 90%;
+  }
+
+  div.speak-mind-feature .container {
+    margin-bottom: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  div.speak-mind-feature .container > .heading > img {
+    height: 5vw;
+    padding-right: 5px;
+  }
+
+  div.speak-mind-feature .container > .heading > h2 {
+    font-size: 4vw;
+  }
+
+  div.speak-mind-feature div.description {
+    font-size: 3.5vw;
+  }
+
+  /* speak-mind-user-voice css */
+  div.speak-mind-user-voice {
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+    width: 100%;
+    background-color: rgba(255, 188, 155, 0.2);
+  }
+
+  div.speak-mind-user-voice > h1 {
+    padding-top: 2vw;
+    padding-bottom: 0;
+    margin-left: 5%;
+    color: #555555;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+  div.speak-mind-user-voice div.user-voice-content {
+    margin: 0px 5%;
+  }
+
+  div.speak-mind-user-voice div.user-image {
+    display: flex;
+    flex-basis: 10%;
+    margin-right: 10px;
+    align-items: center;
+
+  }
+
+  div.speak-mind-user-voice div.description {
+    flex-basis: 90%;
+  }
+
+  div.speak-mind-user-voice  span.user-profile {
+    margin: 0;
+    font-size: 2.5vw;
+    color: #3B1800;
+
+  }
+
+  div.speak-mind-user-voice  h1.voice-title {
+    margin:0;
+    font-size: 3vw;
+    color: #f37947;
+
+  }
+
+  div.speak-mind-user-voice .voice-detail {
+    margin-bottom: 3vw;
+  }
+
+  div.speak-mind-user-voice .voice-detail p {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 2.25vw;
+    line-height: 3.25vw;
+  }
+
+  /* introduction-flow css */
+  div.introduction-flow {
+    margin: 5vw auto;
+    width: 90%;
+  }
+
+  div.introduction-flow > h1 {
+    font-size: 5vw;
+  }
+
+  div.introduction-flow div.container-area-1 {
+    display: block;
+    color: #192B2A;
+  }
+
+  div.introduction-flow div.container-1,
+  div.introduction-flow div.container-3,
+  div.introduction-flow div.container-5,
+  div.introduction-flow div.container-7 {
+    display: flex;
     align-items: center;
   }
 
-  .speak-mind-can .container,
-  .speak-mind-feature .container,
-  .speak-mind-user-voice .container,
-  .introduction-flow .container-1,
-  .introduction-flow .container-3,
-  .introduction-flow .container-5,
-  .introduction-flow .container-7,
-  .introduction-flow .container-2,
-  .introduction-flow .container-4,
-  .introduction-flow .container-6 {
-    width: 100%;
-    flex-basis: 100%;
+  div.introduction-flow div.container-1 img,
+  div.introduction-flow div.container-3 img,
+  div.introduction-flow div.container-5 img,
+  div.introduction-flow div.container-7 img {
+    width: 30%;
+    height: 30%;
+    padding-right: 10px;
   }
 
-  .frequently-asked-questions .container-area {
-    padding: 50px 20px;
+  div.introduction-flow div.container-1 h3.title,
+  div.introduction-flow div.container-3 h3.title,
+  div.introduction-flow div.container-5 h3.title,
+  div.introduction-flow div.container-7 h3.title {
+    font-size: 4vw;
+    color: #f37947;
+    margin: 10px 0px;
   }
 
-  .frequently-asked-questions .question h1 {
-    font-size: var(--font-size-lg);
+  div.introduction-flow div.container-1 .detail,
+  div.introduction-flow div.container-3 .detail,
+  div.introduction-flow div.container-5 .detail,
+  div.introduction-flow div.container-7 .detail {
+    font-size: 3vw;
   }
+
+  div.introduction-flow div.container-2,
+  div.introduction-flow div.container-4,
+  div.introduction-flow div.container-6 {
+    height: 10vw;
+    padding: 10px 0;
+  }
+
+  div.introduction-flow .container-2 img, 
+  div.introduction-flow .container-4 img,
+  div.introduction-flow .container-6 img {
+    height: 100%;
+    transform: rotate(90deg);
+
+  }
+
+  /* frequently-asked-questions css */
+  div.frequently-asked-questions {
+    margin: 5vw auto;
+  }
+
+  div.frequently-asked-questions > h1 {
+    font-size: 5vw;
+  }
+
+  div.frequently-asked-questions div.container-area {
+    padding: 5vw;
+  }
+
+  div.frequently-asked-questions div.question img {
+    display: flex;
+    height: 10vw;
+  }
+
+  div.frequently-asked-questions div.question h1{
+    padding-left: 10px;
+    font-size: 4.25vw;
+  }
+
+  div.frequently-asked-questions hr {
+    background-color: rgba(254, 188, 155, 0.5);
+    height: 3px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  div.frequently-asked-questions div.answer {
+    margin-bottom: 10vw;
+    font-size: 3.5vw;
+  }
+
 }
