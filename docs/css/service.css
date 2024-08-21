@@ -456,6 +456,7 @@ div.frequently-asked-questions div.answer {
     font-size: 2.25vw;
     line-height: 3.25vw;
   }
+
   /* introduction-flow css */
   div.introduction-flow {
     margin: 5vw auto;
@@ -517,6 +518,41 @@ div.frequently-asked-questions div.answer {
     height: 100%;
     transform: rotate(90deg);
 
+  }
+
+  /* frequently-asked-questions css */
+  div.frequently-asked-questions {
+    margin: 5vw auto;
+  }
+
+  div.frequently-asked-questions > h1 {
+    font-size: 5vw;
+  }
+
+  div.frequently-asked-questions div.container-area {
+    padding: 5vw;
+  }
+
+  div.frequently-asked-questions div.question img {
+    display: flex;
+    height: 10vw;
+  }
+
+  div.frequently-asked-questions div.question h1{
+    padding-left: 10px;
+    font-size: 4.25vw;
+  }
+
+  div.frequently-asked-questions hr {
+    background-color: rgba(254, 188, 155, 0.5);
+    height: 3px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  div.frequently-asked-questions div.answer {
+    margin-bottom: 10vw;
+    font-size: 3.5vw;
   }
 
 }
