@@ -205,15 +205,11 @@ div.speak-mind-user-voice .voice-detail p {
   position: absolute;
   top: 10px;
   left: 10px;
-  line-height: 2.5vw;
   font-size: 1.5vw;
+  line-height: 2.75vw;
   color: #444444;
 }
 
-
-div.speak-mind-user-voice li {
-  padding: 8px;
-}
 
 /* introduction-flow css */
 div.introduction-flow {
@@ -405,6 +401,65 @@ div.frequently-asked-questions div.answer {
 
   div.speak-mind-feature div.description {
     font-size: 3.5vw;
+  }
+
+  /* speak-mind-user-voice css */
+  div.speak-mind-user-voice {
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+    width: 100%;
+    background-color: rgba(255, 188, 155, 0.2);
+  }
+
+  div.speak-mind-user-voice > h1 {
+    padding-top: 2vw;
+    padding-bottom: 0;
+    margin-left: 5%;
+    color: #555555;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+  div.speak-mind-user-voice div.user-voice-content {
+    margin: 0px 5%;
+  }
+
+  div.speak-mind-user-voice div.user-image {
+    display: flex;
+    flex-basis: 10%;
+    margin-right: 10px;
+    align-items: center;
+
+  }
+
+  div.speak-mind-user-voice div.description {
+    flex-basis: 90%;
+  }
+
+  div.speak-mind-user-voice  span.user-profile {
+    margin: 0;
+    font-size: 2.5vw;
+    color: #3B1800;
+
+  }
+
+  div.speak-mind-user-voice  h1.voice-title {
+    margin:0;
+    font-size: 3vw;
+    color: #f37947;
+
+  }
+
+  div.speak-mind-user-voice .voice-detail {
+    margin-bottom: 3vw;
+  }
+
+  div.speak-mind-user-voice .voice-detail p {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 2vw;
+    line-height: 3.25vw;
   }
 
 }
