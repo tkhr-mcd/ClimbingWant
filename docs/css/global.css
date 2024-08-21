@@ -110,8 +110,8 @@ header {
 }
 
 .header-company-logo img {
-  vertical-align: top;
-  margin-right: 60px;
+  vertical-align: bottom;
+  margin-right: 3vw;
 }
 
 .nav-menu {
@@ -248,35 +248,43 @@ footer {
   margin-top: 10px;
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-  }
 
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+/* スマホ用のスタイル */
+@media (max-width: 480px) {  
+  /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+
+  /* header css */
+  header {
+    height: auto;
+  } 
+
+  
+  .header-company-logo img {
+    max-width: 115px;
+    margin-right: 2vw;
   }
 
   .footer-company-logo {
     margin-right: 0;
     margin-bottom: 20px;
   }
-
-  .footer-nav-menu {
-    align-items: center;
+  
+  .nav-separator {
+    margin: 2px 5px 0 5px;
   }
 
-  .footer-contact-container {
-    align-items: center;
+  .header-contact {
+    width: 20%;
   }
 
-  .footer-contact img {
-    max-width: 80%;
+  .header-contact img {
+    width: 21vw;
+  }
+
+  .header-footer img{
+    height: 5px;
   }
 }
 
