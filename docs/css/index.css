@@ -120,76 +120,87 @@ img {
 }
 
 /* member area */
-div.member {
+.member {
+  padding: 5% 0 5% 50px;
+  background-color: #fff;
   position: relative;
-  padding: 50px 70px 45px 50px;
   overflow: hidden;
 }
 
-div.member-background {
+.member-background {
   position: absolute;
   right: -50px;
-  bottom: 0px;
+  bottom: -50px;
   width: 600px;
   height: 600px;
   background-image: url('../image/logo_backgroud.png');
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 0;
-}
-
-
-div.member h3 {
-  color: rgba(153, 153, 153, 0.8);
-  margin: 0px;
-  font-size: 1.2vw;
-}
-
-div.member h1 {
-  margin: -5px 0px -2.5px 0px;
-  color: #777777;
-  font-size: 4.4vw;
-  font-weight: bold;
-}
-
-div.member div.container-area {
-  position: relative;
   z-index: 1;
+}
+
+.member-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.member h3 {
+  color: #999;
+  font-size: 1.2vw;
+  margin: 0;
+}
+
+.member h2 {
+  color: #333;
+  margin-top: -5px;
+  margin-bottom: 0;
+  font-size: 4.4vw;
+  font-weight: 700;
+}
+
+.member-content {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-div.member div.container-1 {
-  flex-basis: 30%;
+.member-image {
+  width: 40%;
+  max-width: 400px;
+  margin-right: 40px;
 }
 
-div.member div.container-1 img {
+.member-image img {
   width: 100%;
+  height: auto;
 }
 
-div.member div.container-2 {
-  flex-basis: 65%;
-  margin-top: 75px;
+.member-info {
+  padding-top: 80px;
+  flex: 1;
 }
 
-div.member div.container-2 h2.post, 
-div.member div.container-2 h2.name-alphabet {
-  color: #777777;
-  margin: 0px;
-  font-size: 1.6vw;
+.member-position {
+  font-size: 1.85vw;
+  color: #777;
+  margin: 0 0 5px 0;
 }
 
-div.member div.container-2 h1.name {
-  color: #444444;
-  margin: 0px;
+.member-name {
+  font-size: 3.2vw;
+  color: #333;
+  margin: 0 0 5px 0;
 }
 
-div.member div.container-2 div.career {
-  color: #555555;
-  margin-top: 20px;
+.member-name-en {
+  font-size: 1.85vw;
+  color: #777;
+  margin: 0 0 20px 0;
+}
+
+.member-description {
   font-size: 1.25vw;
-  width: 90%;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* company-summary css */
@@ -342,17 +353,54 @@ div.company-summary-title h1 {
   }
 
   /* member area */
-  div.member div.container-2 h2.post, 
-  div.member div.container-2 h2.name-alphabet {
-    font-size: 4vw;
+  .section.member {
+    padding: 10px 30px 0 30px; 
+   }
+
+  .member h3 {
+    margin-top: 8px;
+    font-size: 1.3vw;
+  }
+
+  .member h2 {
+    font-size: 5.5vw;
+  }
+  .member-content {
+    flex-direction: column;
+  }
+
+  .member-image {
+    order: -1;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .member-background {
+    width: 300px;
+    height: 300px;
+    right: -50px;
+    bottom: -50px;
   }
   
-  div.member div.container-2 div.career {
-    font-size: 3vw;
+  .member-info {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .member-position {
+    margin-bottom: 0;
   }
   
-  .company-info-table th,
-  .company-info-table td {
-    font-size: 3vw;
+  .member-name {
+    margin-bottom: 0;
   }
+  
+  .member-name-en {
+    margin-bottom: 0;
+  }
+
+  .member-description {
+    font-size: 2.1vw;
+  }
+  
 }
