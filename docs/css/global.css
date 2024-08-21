@@ -85,6 +85,10 @@ body {
   --br-41xl: 60px;
 }
 
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+
 /* header css */
 header {
   position: fixed;
@@ -111,7 +115,7 @@ header {
 
 .header-company-logo img {
   vertical-align: top;
-  margin-right: 60px;
+  margin-right: 3vw;
 }
 
 .nav-menu {
@@ -140,8 +144,7 @@ header {
 }
 
 .header-contact img {
-  
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .header-footer {
@@ -217,7 +220,7 @@ footer {
 
 .footer-separator {
   width: 1px;
-  height: 14px;  /* この高さは調整可能です */
+  height: 14px;
   background-color: #ffffff;
   margin-right: 10px;
   display: inline-block;
@@ -248,91 +251,93 @@ footer {
   margin-top: 10px;
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-  }
-
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .footer-company-logo {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-nav-menu {
-    align-items: center;
-  }
-
-  .footer-contact-container {
-    align-items: center;
-  }
-
-  .footer-contact img {
-    max-width: 80%;
-  }
-}
 
 /* スマホ用のスタイル */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+@media (max-width: 480px) {  
+  /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+  .pc { display: none !important; }
+  .sp { display: block !important; }
   
-  header .nav-menu {
-    flex-direction: column;
-    align-items: center;
+  /* header css */
+  .header-company-logo {
+    width: 65%;
   }
-  
+
   .header-company-logo img {
-    width: 100px;
+    max-width: 135px;
+    margin-right: 2vw;
   }
   
-  .header-company-logo span {
-    font-size: var(--font-size-lg);
+  .nav-menu li a {
+    font-size: 9px;
+    padding: 0;
+  }
+  
+  .nav-separator {
+    margin: 3px 5px 0 5px ;
   }
 
-  .footer-area {
-    padding: 50px 5%;
+  .header-contact {
+    width: 20%;
+    margin-top: 3px;
   }
 
-  .footer-area .contact img {
-    width: 10vw;
+  .header-footer img{
+    height: 3px;
   }
 
-  .footer-area .contact h1 {
-    font-size: 5vw;
+  /* footer css */                
+  footer {
+    background-image: url('../image/sp_footer_orange_gradation.png');
   }
-
-  .footer-area .contact .right-arrow {
-    font-size: 10vw;
-  }
-
-  .footer-area ul {
-    flex-direction: column;
-    align-items: center;
+  
+  .footer-content {
     padding: 0;
   }
 
-  .footer-area ul li {
-    padding: 10px 0;
-    font-size: var(--font-size-lg);
+  .footer-company-logo {
+    margin-right: 5px;
   }
 
   .footer-company-logo img {
-    width: 10vw;
+   width: 60px;
+   transform: translate(5%,32%);
+  }
+   
+  .footer-nav-menu li {
+    margin-top: 25px;
+  }
+  
+  .footer-nav-menu li:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  .footer-nav-menu li a {
+    font-size: 8px;
+  }
+  
+  .footer-separator {
+    width: 1px;
+    margin-right: 3px;
   }
 
-  .footer-company-logo span {
-    font-size: var(--font-size-lg);
+  .footer-contact-container {
+    padding-right: 0;
+    margin-top: 11px;
+    margin-right: 85px;
   }
+  
+  
+  .footer-contact img {
+    max-width: 170px;
+    height: auto;
+  }
+  
+  .footer-copyright {
+    font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }  
 }
 
