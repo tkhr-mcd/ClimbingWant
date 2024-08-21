@@ -204,23 +204,23 @@ img {
 }
 
 /* company-summary css */
-div.company-summary {
+.company-summary {
   background-color: rgba(212, 249, 242, 0.3);
-  padding: 70px 0 100px 0;
+  padding: 60px 0 90px 0;
 }
 
-div.company-summary-title {
+.company-summary-title {
   padding: 20px 50px;
 }
 
-div.company-summary-title h3 {
+.company-summary-title h3 {
   color: rgba(4, 165, 159, 0.5);
-  margin: 0px;
+  margin: 0;
   font-size: 1.2vw;
 }
 
-div.company-summary-title h1 {
-  margin: -5px 0px -2.5px 0px;
+.company-summary-title h2 {
+  margin: -5px 0 -2.5px 0;
   color: #04A59F;
   font-size: 4.4vw;
 }
@@ -231,41 +231,37 @@ div.company-summary-title h1 {
   padding: 0 20px;
 }
 
-.company-info-table {
-  width: 96.3%;
-  border-collapse: collapse;
+.company-info-list {
+  width: 100%;
 }
 
-.company-info-table tr:last-child th,
-.company-info-table tr:last-child td {
+.company-info-item {
+  display: flex;
+  border-bottom: 1px solid #B0D3CF;
+  padding: 25px 0;
+}
+
+.company-info-item:last-child {
   border-bottom: none;
 }
 
-.company-info-table th,
-.company-info-table td {
-  padding: 15px;
-  text-align: left;
-  border-bottom: 1px solid #B0D3CF;
-}
-
-.company-info-table th {
-  width: 10%;
+.company-info-item dt {
+  width: 20%;
   color: #444444;
   font-size: 1.2vw;
   font-weight: bold;
-  vertical-align: middle;
 }
 
-.company-info-table td {
-  width: 90%;
+.company-info-item dd {
+  width: 80%;
   color: #333;
   font-size: 1.2vw;
-  line-height: 2.5;
+  margin-left: 0;
 }
 
-.company-info-table ul {
+.company-info-item ul {
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 15px;
 }
 
 
@@ -354,7 +350,7 @@ div.company-summary-title h1 {
 
   /* member area */
   .section.member {
-    padding: 10px 30px 0 30px; 
+    padding: 10px 30px 20px 30px; 
    }
 
   .member h3 {
@@ -376,8 +372,8 @@ div.company-summary-title h1 {
   }
 
   .member-background {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     right: -50px;
     bottom: -50px;
   }
@@ -402,5 +398,55 @@ div.company-summary-title h1 {
   .member-description {
     font-size: 2.1vw;
   }
+
+  /* company-summary css */
+  .company-summary {
+    padding: 30px 0;
+  }
+
+  .company-summary-title {
+    padding: 0 30px;
+  }
   
+  .company-summary-title h3 {
+    font-size: 1.3vw;
+  }
+
+  .company-summary-title h2 {
+    font-size: 5.5vw;
+  }
+
+  .company-summary-content {
+    padding: 0 30px;
+  }
+
+  .company-info-list {
+    margin: 0;
+  }
+
+  .company-info-list {
+    width: 100%;
+  }
+  
+  .company-info-item {
+    padding: 15px 0;
+  }
+
+  .company-info-item:last-child {
+    border-bottom: none;
+  }
+  
+  .company-info-item dt {
+    width: 25%;
+    font-size: 3vw;
+  }
+  
+  .company-info-item dd {
+    width: 75%;
+    font-size: 2.8vw;
+  }
+
+  .company-info-item dd ul {
+    padding-left: 10px;
+  }
 }

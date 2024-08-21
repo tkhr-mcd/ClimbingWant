@@ -143,7 +143,7 @@ header {
 }
 
 .header-contact img {
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .header-footer {
@@ -256,11 +256,8 @@ footer {
   /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
   .pc { display: none !important; }
   .sp { display: block !important; }
-
-  .header-content {
-    height: 25px;
-  }
-
+  
+  /* header css */
   .header-company-logo {
     width: 65%;
   }
@@ -287,36 +284,59 @@ footer {
   .header-footer img{
     height: 3px;
   }
-  
+
+  /* footer css */                
+  footer {
+    background-image: url('../image/sp_footer_orange_gradation.png');
+  }
   
   .footer-content {
-    width: 30%;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-  }
-
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+    padding: 0;
   }
 
   .footer-company-logo {
-    margin-right: 0;
-    margin-bottom: 20px;
+    margin-right: 5px;
   }
 
-  .footer-nav-menu {
-    align-items: center;
+  .footer-company-logo img {
+   width: 60px;
+   transform: translate(5%,32%);
+  }
+   
+  .footer-nav-menu li {
+    margin-top: 25px;
+  }
+  
+  .footer-nav-menu li:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  .footer-nav-menu li a {
+    font-size: 8px;
+  }
+  
+  .footer-separator {
+    width: 1px;
+    margin-right: 3px;
   }
 
   .footer-contact-container {
-    align-items: center;
+    padding-right: 0;
+    margin-top: 11px;
+    margin-right: 85px;
   }
-
+  
+  
   .footer-contact img {
-    max-width: 80%;
+    max-width: 170px;
+    height: auto;
   }
-  }
+  
+  .footer-copyright {
+    font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }  
+}
 
