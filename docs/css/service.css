@@ -1,9 +1,6 @@
-/* パソコンで見たときは"pc"のclassがついた画像が表示される */
-.pc { display: block !important; }
-.sp { display: none !important; }
-
 /* service-top-image */
 div.service-top-image img {
+  display: block;
   padding-top: 48px;
   width: 100%;
 }
@@ -307,20 +304,13 @@ div.frequently-asked-questions div.answer {
 
 /* スマホ用のスタイル */
 @media screen and (max-width: 480px) {
-  /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
-  .pc { display: none !important; }
-  .sp { display: block !important; }
-
-  div.service-top-image img {
-    padding-top: 25px;
-  }
-
   /* service-summary-area css */
   div.service-summary-area div.container-area {
     display: flex;
     flex-direction: column-reverse;
     width: 90%;
     margin: 0 auto;
+
   }
 
   div.service-summary-area div.container-1,
