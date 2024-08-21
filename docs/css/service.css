@@ -453,61 +453,70 @@ div.frequently-asked-questions div.answer {
     position: absolute;
     top: 5px;
     left: 5px;
-    font-size: 2vw;
+    font-size: 2.25vw;
     line-height: 3.25vw;
   }
   /* introduction-flow css */
   div.introduction-flow {
-    margin: 100px auto;
+    margin: 5vw auto;
     width: 90%;
   }
 
   div.introduction-flow > h1 {
-    color: #555555;
-    font-size: 3vw;
-    font-weight: bold;
+    font-size: 5vw;
   }
 
   div.introduction-flow div.container-area-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  div.introduction-flow div.container-area-2 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    color: #192B2A
+    display: block;
+    color: #192B2A;
   }
 
   div.introduction-flow div.container-1,
   div.introduction-flow div.container-3,
   div.introduction-flow div.container-5,
   div.introduction-flow div.container-7 {
-    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  div.introduction-flow div.container-1 img,
+  div.introduction-flow div.container-3 img,
+  div.introduction-flow div.container-5 img,
+  div.introduction-flow div.container-7 img {
+    width: 30%;
+    height: 30%;
+    padding-right: 10px;
+  }
+
+  div.introduction-flow div.container-1 h3.title,
+  div.introduction-flow div.container-3 h3.title,
+  div.introduction-flow div.container-5 h3.title,
+  div.introduction-flow div.container-7 h3.title {
+    font-size: 4vw;
+    color: #f37947;
+    margin: 10px 0px;
+  }
+
+  div.introduction-flow div.container-1 .detail,
+  div.introduction-flow div.container-3 .detail,
+  div.introduction-flow div.container-5 .detail,
+  div.introduction-flow div.container-7 .detail {
+    font-size: 3vw;
   }
 
   div.introduction-flow div.container-2,
   div.introduction-flow div.container-4,
   div.introduction-flow div.container-6 {
-    flex-basis: 5%;
-    text-align: center;
-  }
-
-  div.introduction-flow img {
-    width: 100%;
+    height: 10vw;
+    padding: 10px 0;
   }
 
   div.introduction-flow .container-2 img, 
   div.introduction-flow .container-4 img,
   div.introduction-flow .container-6 img {
-    width: 50%;
+    height: 100%;
+    transform: rotate(90deg);
 
-  }
-
-  div.introduction-flow h3.title {
-    color: #f37947;
-    margin: 10px 0px;
   }
 
 }
