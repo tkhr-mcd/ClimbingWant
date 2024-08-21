@@ -226,13 +226,7 @@ div.introduction-flow > h1 {
 div.introduction-flow div.container-area-1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-div.introduction-flow div.container-area-2 {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  color: #192B2A
+  color: #192B2A;
 }
 
 div.introduction-flow div.container-1,
@@ -247,6 +241,7 @@ div.introduction-flow div.container-4,
 div.introduction-flow div.container-6 {
   flex-basis: 5%;
   text-align: center;
+  padding-top: 7vw;
 }
 
 div.introduction-flow img {
@@ -460,6 +455,59 @@ div.frequently-asked-questions div.answer {
     left: 5px;
     font-size: 2vw;
     line-height: 3.25vw;
+  }
+  /* introduction-flow css */
+  div.introduction-flow {
+    margin: 100px auto;
+    width: 90%;
+  }
+
+  div.introduction-flow > h1 {
+    color: #555555;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  div.introduction-flow div.container-area-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.introduction-flow div.container-area-2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #192B2A
+  }
+
+  div.introduction-flow div.container-1,
+  div.introduction-flow div.container-3,
+  div.introduction-flow div.container-5,
+  div.introduction-flow div.container-7 {
+    flex-basis: 20%;
+  }
+
+  div.introduction-flow div.container-2,
+  div.introduction-flow div.container-4,
+  div.introduction-flow div.container-6 {
+    flex-basis: 5%;
+    text-align: center;
+  }
+
+  div.introduction-flow img {
+    width: 100%;
+  }
+
+  div.introduction-flow .container-2 img, 
+  div.introduction-flow .container-4 img,
+  div.introduction-flow .container-6 img {
+    width: 50%;
+
+  }
+
+  div.introduction-flow h3.title {
+    color: #f37947;
+    margin: 10px 0px;
   }
 
 }
