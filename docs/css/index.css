@@ -37,7 +37,7 @@ img {
 }
 
 .top-message h1 .large-text {
-  font-size: 3.5vw;
+  font-size: 3.5vw;  /* 大きくしたい文字のサイズ */
 }
 
 .top-message p {
@@ -48,179 +48,167 @@ img {
 }
 
 /* service-summary-area css */
-.service-summary-area {
+div.service-summary-area {
   background-color: rgba(255, 188, 155, 0.2);
   padding: 5% 0;
 }
 
-.container {
-  margin: 0;
-  padding-left: 50px;
+div.service-summary-area div.container-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.section-subtitle {
+div.service-summary-area div.container-1,
+div.service-summary-area div.container-2 {
+  flex-basis: 45%;
+}
+
+div.service-summary-area div.container-1 {
+  padding-left: 5.5%;
+}
+
+
+div.service-summary-area div.container-1 h3 {
   color: rgba(243, 121, 71, 0.55);
-  margin: 0;
+  margin: 0px;
   font-size: 1.2vw;
 }
 
-.section-title {
-  margin-top: -5px;
-  margin-bottom: 0;
+div.service-summary-area div.container-1 h1 {
+  margin: -5px 0px -2.5px 0px;
   font-size: 4.4vw;
   color: #F37947;
+  font-family: var(--font-noto-sans-jp);
   font-weight: 700;
 }
 
-.service-content {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 5%;
-}
-
-.service-text {
-  flex-basis: 55%;
-}
-
-.service-name {
+div.service-summary-area div.service-name {
+  margin: 5px 0px 7.5px 0px;
   font-size: 2.75vw;
   color: #f37947;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
-.short-description {
+div.service-summary-area div.short-description {
   font-size: 1.3vw;
   color: #555555;
   font-weight: bold;
-  margin: 0;
 }
 
-.long-description {
+div.service-summary-area div.long-description {
+  margin-bottom: 5px;
   font-size: 1vw;
   line-height: 2em;
   color: #555555;
-  margin: 0;
+  font-weight: 500;
 }
 
-.view-more-button {
+div.service-summary-area a.view-more-button {
   display: inline-block;
-  padding: 20px 20px 15px 0px;
+  background-color: #F37947;
+  color: #ffffff;
+  font-size: 1.3vw;
+  text-decoration: none;
+  padding: 15px 20px 15px 70px;
+  border-radius: 30px;
 }
 
-.service-image {
-  flex-basis: 40%;
-}
-
-.service-image img {
-  max-height: auto;
+div.service-summary-area div.container-2 img {
+  width: 100%;
 }
 
 /* member area */
-.member {
-  padding: 5% 0 5% 50px;
-  background-color: #fff;
+div.member {
   position: relative;
+  padding: 50px 70px 45px 50px;
   overflow: hidden;
 }
 
-.member-background {
+div.member-background {
   position: absolute;
   right: -50px;
-  bottom: -50px;
+  bottom: 0px;
   width: 600px;
   height: 600px;
-  background-image: url('../image/logo_backgroud.png');
+  background-image: url('../image/logo_backgroud.png'); /* ロゴ画像のパスを指定 */
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 1;
+  z-index: 0;
 }
 
-.member-content-wrapper {
-  position: relative;
-  z-index: 2;
-}
 
-.member h3 {
-  color: #999;
+div.member h3 {
+  color: rgba(153, 153, 153, 0.8);
+  margin: 0px;
   font-size: 1.2vw;
-  margin: 0;
 }
 
-.member h2 {
-  color: #333;
-  margin-top: -5px;
-  margin-bottom: 0;
+div.member h1 {
+  margin: -5px 0px -2.5px 0px;
+  color: #777777;
   font-size: 4.4vw;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.member-content {
+div.member div.container-area {
+  position: relative;
+  z-index: 1;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.member-image {
-  width: 40%;
-  max-width: 400px;
-  margin-right: 40px;
+div.member div.container-1 {
+  flex-basis: 30%;
 }
 
-.member-image img {
+div.member div.container-1 img {
   width: 100%;
-  height: auto;
 }
 
-.member-info {
-  padding-top: 80px;
-  flex: 1;
+div.member div.container-2 {
+  flex-basis: 65%;
+  margin-top: 75px;
 }
 
-.member-position {
-  font-size: 1.85vw;
-  color: #777;
-  margin: 0 0 5px 0;
+div.member div.container-2 h2.post, 
+div.member div.container-2 h2.name-alphabet {
+  color: #777777;
+  margin: 0px;
+  font-size: 1.6vw;
 }
 
-.member-name {
-  font-size: 3.2vw;
-  color: #333;
-  margin: 0 0 5px 0;
+div.member div.container-2 h1.name {
+  color: #444444;
+  margin: 0px;
 }
 
-.member-name-en {
-  font-size: 1.85vw;
-  color: #777;
-  margin: 0 0 20px 0;
-}
-
-.member-description {
+div.member div.container-2 div.career {
+  color: #555555;
+  margin-top: 20px;
   font-size: 1.25vw;
-  line-height: 1.6;
-  color: #555;
+  width: 90%;
 }
+
 
 /* company-summary css */
-.company-summary {
+div.company-summary {
   background-color: rgba(212, 249, 242, 0.3);
-  padding: 60px 0 90px 0;
+  padding: 70px 0 100px 0;
 }
 
-.company-summary-title {
+div.company-summary-title {
   padding: 20px 50px;
 }
 
-.company-summary-title h3 {
+div.company-summary-title h3 {
   color: rgba(4, 165, 159, 0.5);
-  margin: 0;
+  margin: 0px;
   font-size: 1.2vw;
 }
-
-.company-summary-title h2 {
-  margin: -5px 0 -2.5px 0;
+div.company-summary-title h1 {
+  margin: -5px 0px -2.5px 0px;
   color: #04A59F;
   font-size: 4.4vw;
 }
@@ -231,222 +219,110 @@ img {
   padding: 0 20px;
 }
 
-.company-info-list {
-  width: 100%;
+.company-info-table {
+  width: 96.3%;
+  border-collapse: collapse;
 }
 
-.company-info-item {
-  display: flex;
-  border-bottom: 1px solid #B0D3CF;
-  padding: 25px 0;
-}
-
-.company-info-item:last-child {
+.company-info-table tr:last-child th,
+.company-info-table tr:last-child td {
   border-bottom: none;
 }
 
-.company-info-item dt {
-  width: 20%;
+.company-info-table th,
+.company-info-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #B0D3CF;
+}
+
+
+.company-info-table th {
+  width: 10%;
   color: #444444;
   font-size: 1.2vw;
   font-weight: bold;
+  vertical-align: middle;
 }
 
-.company-info-item dd {
-  width: 80%;
+.company-info-table td {
+  width: 90%;
   color: #333;
   font-size: 1.2vw;
-  margin-left: 0;
+  line-height: 2.5;
 }
 
-.company-info-item ul {
+.company-info-table ul {
   margin: 0;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 20px;
 }
 
-
-/* スマートフォン向けスタイル */
-@media (max-width: 480px) {  
-  /* top-image-area css */
-  .top-image-area {
-    min-height: 23vh;
-    background-size: 100% 100%;
-  }
-
-  .top-message {
-    padding: 0 0 0 25px;
-  }
-
+/* メディアクエリ */
+/* タブレット向けスタイル */
+@media screen and (max-width: 1024px) {
   .top-message h1 {
-    font-size: 5.4vw;
-    margin-top: 0px;
-    margin-bottom: 5px;
-  }
-
-  .top-message h1 .large-text {
-    font-size: 5.5vw;
+    font-size: 4.5vw;
   }
   
   .top-message p {
     font-size: 1.5vw;
-    margin: 0;
   }
   
-  /* service-summary-area css */
-  .service-summary-area {  
-    padding: 10px 0;
-  }
-
-  .container {
-    padding: 0 30px;
-  }
-
-  .section-subtitle,
-  .section-title {
-    text-align: start;
-  }
-
-  .section-subtitle {
-    margin-top: 8px;
-    font-size: 1.3vw;
-  }
-
-  .section-title {
-    font-size: 5.5vw;
-  }
-
-  .service-content {
+  div.service-summary-area div.container-area {
     flex-direction: column;
-    gap: 0;
+    align-items: center;
   }
-
-  .service-image {
-    order: -1;
-    margin-bottom: 10px;
+  
+  div.service-summary-area div.container-1,
+  div.service-summary-area div.container-2 {
+    flex-basis: 100%;
+    padding: 0 5%;
   }
-
-  .service-text {
+  
+  div.member div.container-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div.member div.container-1,
+  div.member div.container-2 {
     flex-basis: 100%;
   }
+}
 
-  .service-name {
-    font-size: 5vw;
-  }
-
-  .short-description {
-    font-size: 3.5vw;
-  }
-
-  .long-description {
-    margin-top: 5px;
-    font-size: 2.3vw;
-    line-height: 1.6;
-  }
-
-  .view-more-button {
-    padding: 10px 15px 0px 0;
-    width: 155px;
-  }
-
-  /* member area */
-  .section.member {
-    padding: 10px 30px 20px 30px; 
-   }
-
-  .member h3 {
-    margin-top: 8px;
-    font-size: 1.3vw;
-  }
-
-  .member h2 {
-    font-size: 5.5vw;
-  }
-  .member-content {
-    flex-direction: column;
-  }
-
-  .member-image {
-    order: -1;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  .member-background {
-    width: 260px;
-    height: 260px;
-    right: -50px;
-    bottom: -50px;
+/* スマートフォン向けスタイル */
+@media screen and (max-width: 480px) {
+  .top-message h1 {
+    font-size: 6vw;
   }
   
-  .member-info {
-    padding-top: 0;
-    width: 100%;
-  }
-
-  .member-position {
-    margin-bottom: 0;
-  }
-  
-  .member-name {
-    margin-bottom: 0;
-  }
-  
-  .member-name-en {
-    margin-bottom: 0;
-  }
-
-  .member-description {
-    font-size: 2.1vw;
-  }
-
-  /* company-summary css */
-  .company-summary {
-    padding: 30px 0;
-  }
-
-  .company-summary-title {
-    padding: 0 30px;
-  }
-  
-  .company-summary-title h3 {
-    font-size: 1.3vw;
-  }
-
-  .company-summary-title h2 {
-    font-size: 5.5vw;
-  }
-
-  .company-summary-content {
-    padding: 0 30px;
-  }
-
-  .company-info-list {
-    margin: 0;
-  }
-
-  .company-info-list {
-    width: 100%;
-  }
-  
-  .company-info-item {
-    padding: 15px 0;
-  }
-
-  .company-info-item:last-child {
-    border-bottom: none;
-  }
-  
-  .company-info-item dt {
-    width: 25%;
+  .top-message p {
     font-size: 3vw;
   }
   
-  .company-info-item dd {
-    width: 75%;
-    font-size: 2.8vw;
+  div.service-summary-area div.service-name {
+    font-size: 5vw;
   }
-
-  .company-info-item dd ul {
-    padding-left: 10px;
+  
+  div.service-summary-area div.short-description {
+    font-size: 3.5vw;
+  }
+  
+  div.service-summary-area div.long-description {
+    font-size: 3vw;
+  }
+  
+  div.member div.container-2 h2.post, 
+  div.member div.container-2 h2.name-alphabet {
+    font-size: 4vw;
+  }
+  
+  div.member div.container-2 div.career {
+    font-size: 3vw;
+  }
+  
+  .company-info-table th,
+  .company-info-table td {
+    font-size: 3vw;
   }
 }
