@@ -115,8 +115,8 @@ img {
   /* top-image-area css */
   .top-image-area {
     min-height: 45vh;
-    padding: 45px 0 30px;
-    /* keep the right side of the photo (Mt. Fuji and the airplane) in view */
+    /* extra top padding keeps the heading clear of the fixed header and the airplane silhouette */
+    padding: 150px 0 35px;
     background-position: right center;
   }
 
