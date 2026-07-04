@@ -23,13 +23,14 @@ img {
 .top-message {
   max-width: 1200px;
   margin: 0 auto 0 0;
-  padding: 50px 20px 0 50px;
+  /* plain padding instead of transform: translate, which caused horizontal overflow on mid-size screens */
+  padding: 100px 20px 0 90px;
   text-align: left;
-  transform: translate(3%, 15%);
 }
 
 .top-message h1 {
-  font-size: 3.3vw;
+  /* clamp keeps the heading readable on small screens and capped on large ones */
+  font-size: clamp(22px, 3.3vw, 48px);
   font-family: "Zen Kaku Gothic New";
   line-height: 1.5;
   margin-bottom: 30px;
@@ -37,11 +38,11 @@ img {
 }
 
 .top-message h1 .large-text {
-  font-size: 3.5vw;
+  font-size: clamp(24px, 3.5vw, 51px);
 }
 
 .top-message p {
-  font-size: 1vw;
+  font-size: clamp(14px, 1.15vw, 18px);
   font-family: "Zen Kaku Gothic New";
   line-height: 1.8;
   max-width: 1200px;
@@ -113,26 +114,22 @@ img {
 @media (max-width: 480px) {  
   /* top-image-area css */
   .top-image-area {
-    min-height: 23vh;
-    background-size: 100% 100%;
+    min-height: 45vh;
+    padding: 45px 0 30px;
+    /* keep the right side of the photo (Mt. Fuji and the airplane) in view */
+    background-position: right center;
   }
 
   .top-message {
-    padding: 0 0 0 25px;
+    padding: 0 25px;
   }
 
   .top-message h1 {
-    font-size: 5.4vw;
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 
-  .top-message h1 .large-text {
-    font-size: 5.5vw;
-  }
-  
   .top-message p {
-    font-size: 1.5vw;
     margin: 0;
   }
   
@@ -146,7 +143,7 @@ img {
   }
   
   .company-summary-title h3 {
-    font-size: 1.3vw;
+    font-size: 12px;
   }
 
   .company-summary-title h2 {
@@ -174,13 +171,13 @@ img {
   }
   
   .company-info-item dt {
-    width: 25%;
-    font-size: 3vw;
+    width: 28%;
+    font-size: 15px;
   }
-  
+
   .company-info-item dd {
-    width: 75%;
-    font-size: 2.8vw;
+    width: 72%;
+    font-size: 15px;
   }
 
   .company-info-item dd ul {

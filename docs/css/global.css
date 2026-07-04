@@ -190,42 +190,6 @@ footer {
   vertical-align: top;
 }
 
-.footer-nav-menu {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-nav-menu li {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-.footer-nav-menu li:last-child {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.footer-nav-menu li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: var(--font-noto-sans-jp);
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.footer-separator {
-  width: 1px;
-  height: 14px;
-  background-color: #ffffff;
-  margin-right: 10px;
-  display: inline-block;
-}
-
 .footer-contact-container {
   display: flex;
   flex-direction: column;
@@ -238,7 +202,8 @@ footer {
 }
 
 .footer-contact img {
-  max-width: 400px;
+  /* shrink with the viewport so the button never overflows on narrow screens */
+  max-width: min(400px, 55vw);
   height: auto;
 }
 
@@ -290,58 +255,41 @@ footer {
     height: 5px;
   }
 
-  /* footer css */                
+  /* footer css */
   footer {
     background-image: url('../image/sp_footer_orange_gradation.png');
   }
-  
+
+  /* stack the logo, contact button, and copyright in a centered column */
   .footer-content {
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 0;
   }
 
   .footer-company-logo {
-    margin-right: 5px;
+    margin-right: 0;
   }
 
   .footer-company-logo img {
    width: 60px;
-   transform: translate(5%,32%);
-  }
-   
-  .footer-nav-menu li {
-    margin-top: 25px;
-  }
-  
-  .footer-nav-menu li:last-child {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  
-  .footer-nav-menu li a {
-    font-size: 8px;
-  }
-  
-  .footer-separator {
-    width: 1px;
-    margin-right: 3px;
   }
 
   .footer-contact-container {
+    align-items: center;
     padding-right: 0;
-    margin-top: 11px;
-    margin-right: 85px;
+    margin-top: 12px;
   }
-  
-  
+
   .footer-contact img {
     max-width: 170px;
     height: auto;
   }
-  
+
   .footer-copyright {
-    font-size: 8px;
-    margin-top: 5px;
+    font-size: 10px;
+    margin-top: 8px;
     margin-bottom: 10px;
-  }  
+  }
 }
 
